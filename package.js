@@ -14,19 +14,19 @@ Npm.depends({
 Package.onUse(function(api) {
   api.versionsFrom('METEOR@1.0');
 
-  api.addFiles('globals.json', ['server']);
-  api.addFiles('launch_nightwatch_from_app_root.sh', ['server']);
+  api.addAssets('globals.json', ['server']);
+  api.addAssets('launch_nightwatch_from_app_root.sh', ['server']);
 
-  api.addFiles('nightwatch_from_app_root.json', ['server']);
-  api.addFiles('nightwatch_from_velocity.json', ['server']);
-  api.addFiles('nightwatch_from_velocity_console.json', ['server']);
+  api.addAssets('nightwatch_from_app_root.json', ['server']);
+  api.addAssets('nightwatch_from_velocity.json', ['server']);
+  api.addAssets('nightwatch_from_velocity_console.json', ['server']);
 
-  api.addFiles('selenium/chromedriver', ['server']);
-  api.addFiles('selenium/selenium-server-standalone-2.44.0.jar', ['server']);
+  api.addAssets('selenium/chromedriver', ['server']);
+  api.addAssets('selenium/selenium-server-standalone-2.44.0.jar', ['server']);
 
 });
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.addFiles('clinical:nightwatch-tests.js');
+  api.addAssets('clinical:nightwatch-tests.js');
 });
