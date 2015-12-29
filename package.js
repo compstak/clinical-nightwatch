@@ -28,5 +28,5 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.addAssets('clinical:nightwatch-tests.js');
+  api.addAssets('clinical:nightwatch-tests.js', ['server']);
 });
