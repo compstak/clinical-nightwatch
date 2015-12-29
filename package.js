@@ -1,13 +1,13 @@
 Package.describe({
   summary: "Ultra-easy acceptance testing with Selenium.",
-  version: "2.0.1",
-  name: "clinical:nightwatch",
-  git: "https://github.com/awatson1978/clinical-nightwatch",
+  version: "2.1.0",
+  name: "compstak:nightwatch",
+  git: "https://github.com/compstak/clinical-nightwatch",
   debugOnly: true
 });
 
 Npm.depends({
-  'nightwatch': '0.5.36'
+  'nightwatch': '0.8.11'
 });
 
 
